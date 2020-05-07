@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Speech Recognition</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <!-- load font awesome here for icon used on the page -->
+</head>
+<style>
+
+
+body{
+  background-color: #e1e3e6;
+}
+
+.text-box:focus {
+
+  outline: none;
+}
+
+.fa {
+  background: pink;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1rem;
+  float: right;
+  width: 5rem;
+  height: 5rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+    max-height: 55vh;
+    font-size:30px;
+  }
+}
+</style>
+<h1 style="text-align:center;font-color:this is me">Voice Bot</h1>
+<body>
+  <div class="container"> <!--page container -->
+    <div class="text-box" contenteditable="true"> <!--text box which will contain spoken text -->
+    <i class="fa fa-microphone"><img src="mike.jpg" height=50></i> <!-- microphone icon to be clicked before speaking -->
+  </div>
+</div>
+  <audio class="sound" src="chime.mp3"></audio> <!-- sound to be played when we click icon => http://soundbible.com/1598-Electronic-Chime.html -->
+  <script src="index.js"></script> <!-- link to index.js script -->
+</body>
+</html>
